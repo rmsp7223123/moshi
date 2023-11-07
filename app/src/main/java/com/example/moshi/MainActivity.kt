@@ -1,5 +1,6 @@
 package com.example.moshi
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.moshi.databinding.ActivityMainBinding
@@ -42,5 +43,6 @@ class MainActivity : AppCompatActivity() {
             println("JSON 파싱 실패");
         };
 
+        binding.btnMove.setOnClickListener { Intent(this, MainActivity2::class.java); };
     }
 }

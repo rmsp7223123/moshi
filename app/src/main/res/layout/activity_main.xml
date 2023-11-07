@@ -20,4 +20,11 @@
         android:layout_height="wrap_content"
         android:id="@+id/tv_3"/>
 
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:text="이동"
+        android:textSize="50dp"
+        android:id="@+id/btn_move"/>
+
 </LinearLayout>
