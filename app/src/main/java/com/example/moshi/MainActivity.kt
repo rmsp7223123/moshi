@@ -43,6 +43,7 @@ class MainActivity : AppCompatActivity() {
             println("JSON 파싱 실패");
         };
 
-        binding.btnMove.setOnClickListener { Intent(this, MainActivity2::class.java); };
+        binding.btnMove.setOnClickListener { startActivity(Intent(this, MainActivity2::class.java)); };
+        binding.btnMove2.setOnClickListener { startActivity(Intent(this, MainActivity3::class.java)); };
     }
 }

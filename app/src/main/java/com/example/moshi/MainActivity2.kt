@@ -6,6 +6,9 @@ import android.util.Log
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.moshi.databinding.ActivityMain2Binding
+import com.squareup.moshi.JsonAdapter
+import com.squareup.moshi.Moshi
+import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import retrofit2.Call
 import retrofit2.Response
 
@@ -28,6 +31,7 @@ class MainActivity2 : AppCompatActivity() {
             adapter = main2Adapter;
             addItemDecoration(DividerItemDecoration(context, DividerItemDecoration.VERTICAL));
         };
+        retrofitWork();
     }
 
     private fun retrofitWork() {
