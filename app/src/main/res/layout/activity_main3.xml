@@ -7,9 +7,9 @@
     tools:context=".MainActivity3"
     android:orientation="vertical">
 
-    <ImageView
+    <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@mipmap/ic_launcher"/>
+        android:id="@+id/recyclerStore"/>
 
 </LinearLayout>
